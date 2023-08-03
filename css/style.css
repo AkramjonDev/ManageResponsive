@@ -1,0 +1,499 @@
+/* be-vietnam-pro-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/be-vietnam-pro-v11-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* be-vietnam-pro-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/be-vietnam-pro-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* be-vietnam-pro-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/be-vietnam-pro-v11-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* be-vietnam-pro-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/be-vietnam-pro-v11-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* be-vietnam-pro-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/be-vietnam-pro-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* be-vietnam-pro-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/be-vietnam-pro-v11-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root{
+    --first-color: #F3603C;
+    --second-color: #242D52;
+    --third-color: #1D1E25;
+    --fourth-color: #FFF0EC;
+    --fifth-color: #FCF6F5;
+    --hover-color: #F98F75;
+    --link-hover-color: #9296A9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+    font-size: 62.2%;
+}
+ul,
+ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    display: flex;
+    object-fit: cover;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Be Vietnam Pro' , sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    background: #fff;
+    background-image: url(../images/svg/Rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+main{
+    flex-grow: 1;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    margin-top: 6.2rem;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.2rem;
+}
+.nav-link {
+    color: var(--second-color);
+}
+.nav-link:hover{
+    color: var(--link-hover-color);
+}
+.header-btn , .header-btn-2 {
+    width: 13.7rem;
+    height: 4.4rem;
+    border-radius: 2.8rem;
+    background-color: var(--first-color);
+    border: none;
+}
+.header-btn:hover{
+    background: var(--hover-color);
+}
+.header-btn-link {
+    color: var(--fifth-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17.2rem;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+.hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: var(--second-color);
+}
+.hero-text {
+    color: var(--link-hover-color);
+    margin-bottom: 4rem;
+}
+.hero-image {
+    margin-top: -5.2rem;
+}
+.bar-btn{
+    display: none;
+}
+
+/* Header Responsive */
+
+@media screen and (max-width: 1024px) {
+    .container{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        /* border: 2px solid red; */
+    }
+    .hero-title{
+        font-size: 3.6rem;
+    }
+    .hero-image-img{
+        width: 440px;
+        height: 385px;
+    }
+  }
+  @media screen and (max-width: 822px) {
+    .bar-btn{
+        display: block;
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+    }
+    .header-btn{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-image{
+        margin: auto;
+        margin-top: -7rem;
+    }
+    .hero-content {
+        margin-top: 1.9rem;
+    }
+  }
+  @media screen and (max-width: 475px) {
+    .hero-image-img{
+        width: 100%;
+        max-width: 54rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .hero-image-img{
+        width: 100%;
+        max-width: 40rem;
+    }
+  }
+  /* Responsive End */
+
+.manage{
+    margin-top: 18rem;
+}
+.manage-container {
+    display: flex;
+    justify-content: space-between;
+}
+.managa-content-title {
+    width: 100%;
+    max-width: 44.5rem;
+    color: var(--second-color);
+    font-size: 4rem;
+    line-height: 4.4rem;
+    letter-spacing: -0.714px;
+    font-weight: 700;
+}
+.manage-content-text {
+    width: 100%;
+    max-width: 35rem;
+    font-weight: 400 !important;
+    opacity: 0.5025;
+    line-height: 2.6rem;
+}
+.manage-card-main{
+    display: flex;
+}
+.manage-card-number{
+    display: flex;
+    flex-direction: column;
+    gap: 11.5rem;
+}
+.card-number-title:nth-child(1){
+    margin-top: -0.8rem;
+    margin-right: 2.8rem;
+} 
+.card-number-title {
+    width: 6.7rem;
+    height: 3.9rem;
+    border-radius: 39px;
+    background: var(--first-color);
+    color: var(--fourth-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.manage-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4.6rem;
+}
+.card-title {
+    color: var(--second-color);
+    font-weight: 700;
+    letter-spacing: -0.286px;
+}
+.card-text {
+    width: 100%;
+    max-width: 44.5rem;
+    color: var(--link-hover-color);
+    font-weight: 400;
+    margin-top: 1.9rem; 
+}
+
+/* MANAGE RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    .manage{
+        /* display: flex;
+        flex-direction: column; */
+    }
+    .manage-container{
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+    }
+    .manage-content{
+        margin: auto;
+    }
+    .manage-content-text{
+        margin-left: 3rem;
+    }
+    .managa-content-title{
+        margin-bottom: 1.9rem;
+    }
+    .manage-card-main{
+        margin-top: 6rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .manage{
+        font-size: 85%;
+    }
+}
+
+.item-bc-img{
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+    background: url(../images/png/aisha.png) , no-repeat , center;
+}
+
+.about {
+    margin-top: 14.4rem;
+}
+.about-container {
+    text-align: center;
+}
+.about-title {
+    color: var(--second-color);
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.4rem;
+    letter-spacing: -0.714px;
+    margin-bottom: 6.4rem;
+}
+.owl-carousel {
+
+}
+.item {
+    display: flex;
+    flex-direction: column;
+}
+.item-bc-img {
+    margin: auto;
+}
+.item-title {
+    margin-top: 2.4rem;
+    margin-bottom: 1.6rem;
+    color: var(--second-color);
+    font-weight: 700;
+    letter-spacing: -0.286px;
+}
+.item-text {
+    color: var(--link-hover-color);
+}
+.header-btn-2{
+    margin-top: 8.8rem;
+}
+
+.teamwork {
+    margin-top: 18rem;
+    background-image: url(../images/png/Rectangle\ Copy\ 20.png) , right top;;
+    background: url(../images/png/Rectangle\ Copy\ 19.png);
+    background-repeat: no-repeat;
+    background-color: var(--first-color);
+}
+.teamwork-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teamwork-title {
+    width: 100%;
+    max-width: 50.5rem;
+    color: var(--fourth-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.4rem;
+    margin-top: 6.2rem;
+    margin-bottom: 6.2rem;
+}
+.teamwork-btn {
+    width: 13.7rem;
+    height: 4.4rem;
+    text-align: center;
+    color: var(--first-color);
+    background-color: var(--fourth-color);
+    border: none;
+    border-radius: 2.8rem;
+    font-weight: 600;
+}
+.teamwork-btn:hover{
+    color: var(--hover-color);
+    cursor: pointer;
+}
+@media screen and (max-width: 505px) {
+    .teamwork-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* FOOTER START */
+
+.footer {
+    background-color: var(--third-color);
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6.5rem;
+    margin-bottom: 6.1rem;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 8.3rem;
+}
+.fa-brands {
+    font-size: 2.5rem;
+    color: var(--fifth-color);
+}
+.footer-links {
+    width: 100%;
+    max-width: 38.20rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.footer-link {
+    color: var(--fifth-color);
+}
+.footer-link:hover{
+    color: var(--first-color);
+}
+.footer-search {
+
+}
+.footer-input {
+    width: 100%;
+    max-width: 20rem;
+    height: 4.4rem;
+    text-align: center;
+    padding-left: 1rem;
+    border-radius: 2.2rem;
+    outline: none;
+    border: none;
+    background-color: var(--fifth-color);
+}
+.footer-btn {
+    width: 6.4rem;
+    height: 4.4rem;
+    background-color: var(--first-color);
+    border: none;
+    border-radius: 2.2rem;
+    color: var(--fifth-color);
+}
+.footer-btn:hover{
+    background-color:var(--hover-color);
+    cursor: pointer;
+}
+
+/* Footer Responsive */
+
+@media screen and (max-width: 769px) {
+    .footer-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-links{
+        width: 100%;
+        max-width: 30rem;
+        border: 2px solid var(--third-color);
+        margin-top: 5.4rem;
+        margin-left: 2rem;
+    }
+    .footer-logo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer-logo-img{
+        margin: auto;
+        margin-top: 5.6rem;
+    }
+}
